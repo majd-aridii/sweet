@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    background: #ffffff;
+}
+
+/* HERO SECTION */
+.hero-section {
+    width: 100%;
+    min-height: 560px;
+    position: relative;
+    background-image: url("images/bufea3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(214, 184, 184, 0.38);
+    z-index: 1;
+}
+
+.top-bar {
+    width: 100%;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 36px;
+    background: #c9867f;
+    position: relative;
+    z-index: 3;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand-logo {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: transparent;
+}
+
+.brand-name {
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+
+.contact-link {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+}
+
+.contact-link:hover {
+    opacity: 0.85;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 760px;
+    padding: 160px 36px 70px;
+}
+
+.hero-content h1 {
+    font-size: 34px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 28px;
+    line-height: 1.15;
+}
+
+.hero-content p {
+    max-width: 720px;
+    font-size: 16px;
+    line-height: 1.45;
+    color: white;
+    margin-bottom: 22px;
+}
+
+/* SECTION TITLES */
+.wedding-creation-section h2,
+.wedding-cakes-section h2,
+.chocolate-icecream-section h2,
+.sweet-moments-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+}
+
+/* WEDDING CREATION */
+.wedding-creation-section {
+    background: white;
+    padding: 60px 40px;
+}
+
+.wedding-creation-section h2 {
+    color: #c9867f;
+}
+
+/* WEDDING CAKES */
+.wedding-cakes-section {
+    background: #c9867f;
+    padding: 60px 40px;
+}
+
+.wedding-cakes-section h2 {
+    color: white;
+}
+
+/* CHOCOLATE */
+.chocolate-icecream-section {
+    background: white;
+    padding: 60px 40px;
+}
+
+.chocolate-icecream-section h2 {
+    color: #c9867f;
+}
+
+/* SWEET MOMENTS */
+.sweet-moments-section {
+    background: #c9867f;
+    padding: 60px 40px;
+}
+
+.sweet-moments-section h2 {
+    color: white;
+}
+
+/* SCROLL CONTAINERS */
+.wedding-scroll,
+.cakes-scroll,
+.chocolate-scroll,
+.sweet-video-scroll {
+    display: flex;
+    gap: 25px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+}
+
+.wedding-scroll::-webkit-scrollbar,
+.cakes-scroll::-webkit-scrollbar,
+.chocolate-scroll::-webkit-scrollbar,
+.sweet-video-scroll::-webkit-scrollbar {
+    height: 8px;
+}
+
+.wedding-scroll::-webkit-scrollbar-thumb,
+.chocolate-scroll::-webkit-scrollbar-thumb {
+    background: #c9867f;
+    border-radius: 10px;
+}
+
+.cakes-scroll::-webkit-scrollbar-thumb,
+.sweet-video-scroll::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+}
+
+/* CARDS */
+.wedding-card,
+.cake-card,
+.chocolate-card,
+.sweet-video-card {
+    min-width: 280px;
+    width: 280px;
+    height: 420px;
+    border-radius: 28px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.wedding-card img,
+.cake-card img,
+.chocolate-card img,
+.sweet-video-card video,
+.cake-card video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* FOOTER */
+.site-footer {
+    background: #8d8d8d;
+    padding: 35px 40px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer-block h3 {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icons a {
+    width: 52px;
+    height: 42px;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+    background: white;
+    color: #8d8d8d;
+}
+
+.whatsapp-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    background: white;
+    color: #8d8d8d;
+}
+
+.hero-content h1,
+.hero-content p {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+}
+
+.footer-block {
+    width: fit-content;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .hero-section {
+    min-height: 430px;
+    background-size: 160%;
+    background-position: center center;
+}
+
+    .hero-section::before {
+        background: rgba(214, 184, 184, 0.48);
+    }
+
+    .top-bar {
+        height: 56px;
+        padding: 0 14px;
+    }
+
+    .brand {
+        gap: 7px;
+    }
+
+    .brand-logo {
+        width: 20px;
+        height: 20px;
+    }
+
+    .brand-name {
+        font-size: 10px;
+        letter-spacing: 0.8px;
+    }
+
+    .contact-link {
+        font-size: 10px;
+        letter-spacing: 0.4px;
+    }
+
+    .hero-content {
+        max-width: 92%;
+        padding: 78px 16px 28px;
+    }
+
+    .hero-content h1 {
+        font-size: 19px;
+        line-height: 1.15;
+        margin-bottom: 14px;
+        max-width: 260px;
+    }
+
+    .hero-content p {
+        font-size: 11px;
+        line-height: 1.55;
+        margin-bottom: 12px;
+        max-width: 290px;
+    }
+
+    .wedding-creation-section,
+    .wedding-cakes-section,
+    .chocolate-icecream-section,
+    .sweet-moments-section {
+        padding: 28px 12px;
+    }
+
+    .wedding-creation-section h2,
+    .wedding-cakes-section h2,
+    .chocolate-icecream-section h2,
+    .sweet-moments-section h2 {
+        font-size: 18px;
+        line-height: 1.1;
+        margin-bottom: 18px;
+    }
+
+    .wedding-scroll,
+    .cakes-scroll,
+    .chocolate-scroll,
+    .sweet-video-scroll {
+        gap: 10px;
+        padding-bottom: 6px;
+    }
+
+    .wedding-card,
+    .cake-card,
+    .chocolate-card,
+    .sweet-video-card {
+        min-width: 115px;
+        width: 115px;
+        height: 170px;
+        border-radius: 16px;
+    }
+
+    .site-footer {
+        padding: 22px 14px 18px;
+    }
+
+    .footer-content {
+        gap: 22px;
+    }
+
+    .footer-block {
+        width: fit-content;
+    }
+
+    .footer-block h3 {
+        font-size: 14px;
+        margin-bottom: 10px;
+        line-height: 1.1;
+    }
+
+    .social-icons {
+        gap: 10px;
+    }
+
+    .social-icons a {
+        width: 36px;
+        height: 36px;
+        font-size: 15px;
+        border-radius: 8px;
+    }
+
+    .whatsapp-btn {
+        font-size: 13px;
+        padding: 9px 16px;
+        border-radius: 8px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
